@@ -1,0 +1,7 @@
+# Requisitos para o backend do OctoFit Tracker
+# Baseado no Monafit Tracker
+Django>=3.2
+ djangorestframework
+ djongo
+ pymongo
+ django-cors-headers
