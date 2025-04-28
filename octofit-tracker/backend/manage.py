@@ -3,6 +3,8 @@
 import os
 import sys
 
+# Alteração sem impacto funcional para rodar o action do GitHub
+
 
 def main():
     """Run administrative tasks."""
