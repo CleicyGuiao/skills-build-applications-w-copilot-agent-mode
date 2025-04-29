@@ -51,8 +51,11 @@ class Command(BaseCommand):
 
         # Leaderboard
         leaderboard_entries = [
-            Leaderboard(_id=ObjectId(), team=blue_team, points=100),
-            Leaderboard(_id=ObjectId(), team=gold_team, points=90),
+            Leaderboard(_id=ObjectId(), user=users[0], score=100),
+            Leaderboard(_id=ObjectId(), user=users[1], score=90),
+            Leaderboard(_id=ObjectId(), user=users[2], score=95),
+            Leaderboard(_id=ObjectId(), user=users[3], score=85),
+            Leaderboard(_id=ObjectId(), user=users[4], score=80),
         ]
         Leaderboard.objects.bulk_create(leaderboard_entries)
 

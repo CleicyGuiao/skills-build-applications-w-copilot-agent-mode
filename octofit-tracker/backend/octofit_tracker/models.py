@@ -23,8 +23,8 @@ class Activity(models.Model):
 
 class Leaderboard(models.Model):
     _id = models.ObjectIdField()
-    team = models.ForeignKey(Team, on_delete=models.CASCADE)
-    points = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    score = models.IntegerField()
     # outros campos relevantes
 
 class Workout(models.Model):
