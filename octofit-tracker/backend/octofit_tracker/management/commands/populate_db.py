@@ -69,4 +69,4 @@ class Command(BaseCommand):
         ]
         Workout.objects.bulk_create(workouts)
 
-        self.stdout.write(self.style.SUCCESS('Dados de teste populados com sucesso!'))
+        self.stdout.write(self.style.SUCCESS('Successfully populated the database with test data.')) # Copilot agent mode
