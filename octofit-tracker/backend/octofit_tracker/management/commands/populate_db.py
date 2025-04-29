@@ -7,7 +7,7 @@ from bson import ObjectId
 from django.utils import timezone
 
 class Command(BaseCommand):
-    help = 'Popula o banco octofit_db com dados de teste para users, teams, activity, leaderboard e workouts.'
+    help = 'Populate the database with test data for users, teams, activity, leaderboard, and workouts.'
 
     def handle(self, *args, **kwargs):
         # Conecta ao MongoDB
