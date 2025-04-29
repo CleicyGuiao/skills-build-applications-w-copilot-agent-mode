@@ -32,3 +32,4 @@ class Command(BaseCommand):
         Leaderboard.objects.create(team=team2, points=100)
 
         self.stdout.write(self.style.SUCCESS('Dados de teste populados com sucesso!'))
+#teste
