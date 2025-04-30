@@ -5,8 +5,8 @@ function Activities() {
 
   useEffect(() => {
     // Copilot agent mode: Use codespace Django REST API endpoint suffix
-    // Endpoint: /api/activity/
-    fetch('https://automatic-telegram-v5v499jw5wwhq57-8000.app.github.dev/api/activity/')
+    // Endpoint: /api/activities/
+    fetch('https://automatic-telegram-v5v499jw5wwhq57-8000.app.github.dev/api/activities/')
       .then(res => res.json())
       .then(data => setActivities(data))
       .catch(err => setActivities([]));
